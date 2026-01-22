@@ -7,7 +7,7 @@ public class SuperCar extends Car{
     @Override
     void run(){
        
-        System.out.println("ブオーン!" + this.name + "が走ります");
+        System.out.println("ブオーン!" + getName() + "が走ります");
     }
 
 }
