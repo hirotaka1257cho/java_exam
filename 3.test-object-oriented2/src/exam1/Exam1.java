@@ -1,12 +1,17 @@
 package exam1;
 
 public class Exam1 {
-Car car = new SuperCar();
+        public static void main(String[] args) {
+    Car car;       
+        
+    
+car = new SuperCar();
 car.setName("フェラーリ");
 car.run();
 
-Car car = new EcoCar();
+car = new EcoCar();
 car.setName("プリウス");
 car.run();
 
+}
 }
