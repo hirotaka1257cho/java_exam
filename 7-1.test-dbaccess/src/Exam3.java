@@ -21,8 +21,8 @@ public static void main(String[] args) {
 			con = DriverManager.getConnection(url, user, password);
 
 			// (2)SQL文を作成
-			sql = "INNER JOIN test_members ON test_deps id = id";
-            sql = "SELECT id, name, age, dep_id FROM test_members;";
+			sql = "SELECT e.id, e.name, e.age, d.name AS a FROM test_members AS e INNER JOIN test_deps AS d ON e.dep_id = d.id;";
+        //	sql = "SELECT m.id, m.name, m.age, d.name AS a FROM test_members AS m INNER JOIN test_deps AS d ON m.dep_id = d.id;";
 
 
 			// (3)SQL実行準備
@@ -30,22 +30,20 @@ public static void main(String[] args) {
 
 			// (4)SQL実行
 			// ※ここにSQL実行処理を書く
-            int numOfUpdate = pstmt.executeUpdate();
             rs = pstmt.executeQuery();
 
 			// (5)結果の操作
 			// ※ここに結果の操作処理を書く
-            System.out.println(numOfUpdate);
 
             while (rs.next()) {
                 int id = rs.getInt("id");
                 String name = rs.getString("name");
                 int age = rs.getInt("age");
-                int dep_id = rs.getInt("dep_id");
+                String dep_name = rs.getString("a");
                 System.out.println("id:" + id);
                 System.out.println("name:" + name);
                 System.out.println("age:" + age);
-                System.out.println("dep_id:" + dep_id);
+                System.out.println("dep_name:" + dep_name);
             }
 
 		} catch (SQLException ex) {
