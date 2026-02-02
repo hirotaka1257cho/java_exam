@@ -1,8 +1,9 @@
 package exam;
 
-import java.lang.reflect.Member;
+
 
 import dao.MemberDao;
+import dto.Member;
 
 /**
  * load()メソッド、動作確認用の実行クラスです.
@@ -15,6 +16,6 @@ public class LoadMain {
 	public static void main(String[] args) {
 		MemberDao dao = new MemberDao();
 		Member member = dao.load(1);
-		System.out.println(member.getId());
+		System.out.println(member);
 	}
 }
