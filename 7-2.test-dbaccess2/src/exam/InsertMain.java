@@ -1,4 +1,4 @@
-package exam;
+/*package exam;
 
 import java.lang.reflect.Member;
 
@@ -10,7 +10,7 @@ import dto.Member;
  * 
  * @author igamasayuki
  *
- */
+ 
 public class InsertMain {
 
 	public static void main(String[] args) {
@@ -21,3 +21,4 @@ public class InsertMain {
 
 		System.out.println("insert終了");
 	}
+*/

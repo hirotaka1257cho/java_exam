@@ -1,0 +1,1 @@
+SELECT * FROM employees WHERE end_date is NULL ORDER BY start_date ASC LIMIT 1;
