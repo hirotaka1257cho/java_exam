@@ -4,5 +4,6 @@
         "7-2.test-dbaccess2",
         "logic-exam-yokoyama/src"
     ],
-    "remote.autoForwardPortsFallback": 0
+    "remote.autoForwardPortsFallback": 0,
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
