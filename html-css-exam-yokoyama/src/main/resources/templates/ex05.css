@@ -1,0 +1,40 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: rgb(127, 142, 255);
+}
+
+main {
+    display: flex;
+    height: 300px;
+}
+
+main .menu, main .add {
+    background-color: rgb(95, 160, 101);
+    width: 20vw;
+}
+
+main .main {
+    width: 60vw;
+    background-color: rgb(237, 100, 187);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: rgb(255, 242, 127);
+}

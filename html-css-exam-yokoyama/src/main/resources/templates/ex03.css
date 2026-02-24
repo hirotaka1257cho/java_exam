@@ -1,0 +1,12 @@
+ul {
+    display: grid;
+    gap: 8px;
+}
+
+.submit {
+    margin-right: 10px;
+}
+
+label {
+    cursor: pointer;
+}

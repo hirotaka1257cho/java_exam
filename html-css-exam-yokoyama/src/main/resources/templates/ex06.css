@@ -1,0 +1,17 @@
+ul {
+    list-style: none;
+    color: #ffffff;
+}
+
+li {
+    width: 120px;
+    padding: 15px 15px;
+}
+
+ul .red {
+    background-color: red;
+}
+
+ul .green {
+    background-color: green;
+}
