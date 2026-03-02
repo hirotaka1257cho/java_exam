@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-  <form action="@{/exam02/result}" method="post">
+  <form th:action="@{/exam02/result}" method="post">
     数字を入れてください。<br>
     <input type="number" name="num1"> + <input type="number" name="num2">=
     <button type="submit">足し算をする</button>

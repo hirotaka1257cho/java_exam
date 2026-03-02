@@ -7,6 +7,5 @@
 </head>
 <body>
     <h1>足し算結果画面</h1>
-  <p th:text="${session.num1} + ${session.num2} = ${session.result}"></p>
-</body>
-</html>
+<p th:text="|${session.num1} + ${session.num2} = ${session.result}|"></p>
+</body> </html>
